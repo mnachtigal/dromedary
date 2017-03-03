@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '7.2'
+beforescript:
+- npm install -g gulp
+- npm install
+script: gulp package-app
+deploy:
+  provider: heroku
+  app: matt-nach-app-first
+  api_key:
+    secure: d+0RpFy7sDvkTm1eoZ9WvotCzf+juowsR4F8MlkQp8jS8IEbWC57S0dg3NAEyLvkSxWf7kiPzpoL63aLROC1HcdJgOpo6QlMbsK1MQALsx7muFkfNdj2T28VTWEBq9zgrutwvbpsDgN36LwWqpdNF6mpWOEVzOM780zLzVqdp/0gYfXSou30/Ibc8PdNfx3BQORt33LFBe3B9sGM3k29DnB2q4yOh0sTIEz+8repgcsCn6z7a/mDKpJxvTicBhjU9xY40PFo13t1CqTvWUjIjl2KBmsLLoRRGlwsxbhOGhkU8Zp63LILtIMi2NhXeCbRrrFcaqQYIobG4t9K+RIPAoFVxPdVYUKW65sb9y9DosLbZ+GLV+zdnCECejY1nILsPyZQ7H6VLZBQBmAC6f0yth47GnrCeGVW5tlEPf+sZQuFolZsZUlFakCtC0GgBUleWFd72K0hyNjXH60NtTkkhOtgEdj0JsOUz9lgF/r+ZhvKJM4E8GeogwR1qG0QV/bObSmxEnGj2/Uy6wuR+LASFdvMzQ9eXVGE68yjdwagkgWytlbl1XHCT/UWPi0pef+V1gyYTGE/5oObzbpnB9F1AcGxsKJ9q0Pl602RWhRCYz7ISvylgFK5MYO4TLxtfqF4DFFNhRQJTf4BBH4rCXyYvBT7iOmnGZEvAaWg+n+jDns=
